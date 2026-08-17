@@ -8,7 +8,7 @@ decisión estratégica para revertirla.
 ## Contexto / El problema
 
 Al revisar el cierre acumulado del período, la Dirección Comercial detectó 
-una variación mensual negativa (-2,76%) y fuertes oscilaciones en la 
+una variación mensual negativa y fuertes oscilaciones en la 
 facturación total. Antes de recortar presupuestos, se solicitó un Análisis 
 de Causa Raíz para entender dónde se estaba perdiendo valor y qué acciones 
 inmediatas tomar.
@@ -49,7 +49,6 @@ territorios de venta.
 
 ## Dashboard
 
-
 Principales KPIs relevados: Ventas totales, Variación mensual, 
 Transacciones, Ticket Medio, Cantidad Media, Vendedores. El dashboard 
 permite filtrar por canal (Digital / Personal), categoría de producto y 
@@ -57,21 +56,64 @@ región.
 
 ## Análisis de Causa Raíz (5 Por qué)
 
-```mermaid
-flowchart TD
-    A["Las ventas vienen bajando mensualmente"] --> B["¿Por qué? Hay oscilación en montos y cantidades en el último año y medio"]
-    B --> C["¿Por qué? La venta media y la cantidad media bajaron abruptamente mes a mes"]
-    C --> D["¿Por qué? Contradicción: bajan cantidades/montos pero suben las transacciones"]
-    D --> E["¿Por qué? El canal digital sostiene ventas; el canal Personal muestra inconsistencia"]
-    E --> F["[COMPLETAR: ¿por qué el canal Personal es inconsistente? ¿vendedores, región o producto?]"]
-    F --> G["Problema identificado: "]
-```
+1. **Las ventas vienen bajando mensualmente.**
+   ¿Por qué? Hay una oscilación en montos y cantidades en el último año y medio.
+
+2. ¿Por qué? La venta media y la cantidad media han bajado abruptamente mes a mes.
+
+3. ¿Por qué? Tenemos una contradicción: mientras bajan cantidades y montos, 
+   aumentan las transacciones.
+
+4. ¿Por qué? El canal Digital es el que ha aumentado las transacciones y 
+   sostenido las cantidades y montos de venta.
+
+5. ¿Por qué? El canal Personal está registrando mucha inconsistencia en el 
+   flujo de ventas.
+
+**Problema identificado:** el canal Personal presenta inconsistencia en su 
+flujo de ventas, mientras que el canal Digital se mantiene estable y en 
+crecimiento.
+
+## Profundizando la causa: ¿por qué es inconsistente el canal Personal?
+
+Se filtró el dashboard por canal Personal 
+y se analizaron 3 hipótesis por separado:
+
+**¿Es un problema de vendedores?**
+Se comparó el Ticket Medio y la Cantidad Media de los 17 vendedores del 
+canal Personal. Los valores muestran una distribución pareja y decreciente, sin ningún vendedor claramente aislado del resto. 
+
+**¿Es un problema de región?**
+Se comparó la participación de cada región dentro del canal Personal contra 
+el total general. North America y Europe se mantienen relativamente 
+estables. Pacific muestra baja participación del canal Personal, pero al revisar la evolución mensual, esta 
+baja participación es estructural, se mantuvo estable durante todo el 
+período, no es un deterioro reciente.
+
+**¿Es un problema de categoría de producto?**
+Se comparó la mezcla de categorías (Bikes, Components, Clothing, 
+Accessories) dentro del canal Personal contra el total general. La 
+proporción se mantiene estable entre ambas vistas. 
+
+**Conclusión:** ninguna causa puntual (un vendedor, una región o una 
+categoría) explica el deterioro reciente del canal Personal. La 
+inconsistencia responde a un fenómeno más amplio: una 
+migración generalizada del comportamiento de compra hacia el canal 
+Digital, que el canal Personal todavía no logró compensar (ticket medio, conversión, etc.).
 
 ## Recomendación estratégica
 
-**¿El problema es de los vendedores, de la región o de los productos?**
+En lugar de invertir en corregir un vendedor, región o producto puntual 
+(no hay evidencia de una falla localizada), se recomienda redirigir 
+presupuesto a fortalecer la eficiencia del canal Personal. Por ejemplo, 
+capacitación en venta cruzada/upselling para elevar el ticket medio, o 
+reforzar la inversión en el canal Digital, que ya demostró sostener el 
+crecimiento del negocio.
 
+## Dashboard
 
-**¿Qué decisión debería tomar la gerencia con el presupuesto del próximo año?**
+![Dashboard general](dashboard.png)
+
+![Dashboard filtrado por canal Personal](region-canal-personal.png)
 
 
