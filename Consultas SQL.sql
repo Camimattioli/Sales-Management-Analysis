@@ -1,4 +1,4 @@
--- Consulta básica para ventas
+-- Consulta para ventas
 SELECT
 	t1.SalesOrderID
 	,t1.OrderDate
@@ -14,7 +14,7 @@ SELECT
 FROM Sales.SalesOrderHeader AS t1
 	INNER JOIN Sales.SalesOrderDetail as t2 on t1.SalesOrderID = t2.SalesOrderID
 	
--- Consulta básica para productos
+-- Consulta para productos
 SELECT
 	t1.ProductID
 	,t1.Name AS 'Producto'
