@@ -112,8 +112,8 @@ crecimiento del negocio.
 
 ## Dashboard
 
-![Dashboard general](dashboard.png)
+![Dashboard general](Dashboard.png)
 
-![Dashboard filtrado por canal Personal](region-canal-personal.png)
+![Dashboard filtrado por canal Personal](Dashboard_canal_fisico.png)
 
 
